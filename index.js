@@ -12,6 +12,6 @@ app.use((err, req, res, next) => {
   res.status(500).json({ error: err.message || "Internal Server Error" });
 });
 
-app.listen(process.env.SERVER_PORT, () => {
-  console.log(`server running at PORT ${process.env.SERVER_PORT}`);
+app.listen(process.env.PORT, () => {
+  console.log(`server running at PORT ${process.env.PORT}`);
 });
